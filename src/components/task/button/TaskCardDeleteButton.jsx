@@ -1,11 +1,20 @@
 import React from 'react'
 
-export const TaskCardDeleteButton = ({ taskCardsList, setTaskCardsList, taskCard, }) => {
+export const TaskCardDeleteButton = ({ taskCardsList, setTaskCardsList, taskCard }) => {
+
+  // ----------
+  // タスクカード削除処理
+  // ----------
   const taskCardDeleteButton = (id) => {
-    /* タスクカードを削除する */
+    // ----------
+    // IDが異なるタスクをリストに残す(=IDに一致するものをリストから削除する)
+    // ----------
     setTaskCardsList(taskCardsList.filter((e) => e.id !== id))
   };
 
+  // ----------
+  // 返り値
+  // ----------
   return (
     <div>
       <button

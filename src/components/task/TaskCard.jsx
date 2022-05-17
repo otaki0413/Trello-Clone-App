@@ -5,15 +5,18 @@ import { TaskAddInput } from "./input/TaskAddInput"
 import { Tasks } from "./Tasks"
 import { Draggable } from 'react-beautiful-dnd'
 
-export const TaskCard = ({
-  taskCardsList,
-  setTaskCardsList,
-  taskCard,
-  index,
-}) => {
+export const TaskCard = ({ taskCardsList, setTaskCardsList, taskCard, index, }) => {
+  // ----------
+  // state宣言
+  // ----------
+  /* 入力したタスク */
   const [inputText, setInputText] = useState('');
+  /* タスク格納用リスト */
   const [taskList, setTaskList] = useState([]);
 
+  // ----------
+  // 返り値
+  // ----------
   return (
     <Draggable draggableId={taskCard.id} index={index}>
       {(provided) => (
