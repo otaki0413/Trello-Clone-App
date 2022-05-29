@@ -1,5 +1,6 @@
 import React from 'react'
 import { Draggable } from 'react-beautiful-dnd'
+import { FaRegTrashAlt } from "react-icons/fa";
 
 export const Task = ({ task, taskList, setTaskList, index }) => {
   // taskIdをもとにタスクを削除する
@@ -19,7 +20,8 @@ export const Task = ({ task, taskList, setTaskList, index }) => {
         >
           <p className='taskText'>{task.text}</p>
           <button className='taskTrashButton' onClick={() => handleDelete(task.id)}>
-            <i className="fa-solid fa-trash"></i>
+            {/* ゴミ箱 */}
+            <FaRegTrashAlt />
           </button>
         </div>
       )}

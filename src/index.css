@@ -17,6 +17,12 @@ header {
   background-color: rgb(66, 105, 116);
 }
 
+header > p {
+  color: rgb(165, 173, 53);
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+
 .app {
   background: url(../src/images/mountain.jpg);
   background-repeat: no-repeat;
@@ -24,20 +30,21 @@ header {
 }
 
 .taskCard {
-  width: 250px;
+  width: 280px;
   padding: 10px 25px;
   margin: 10px 1%;
   background-color: rgb(228, 228, 228);
   border-radius: 5px;
 }
+
 .taskCardTitleInputArea {
   cursor: pointer;
   margin-bottom: 10px;
-  width: 30%;
+  width: 50%;
 }
 
 .taskCardTitleInput {
-  width: 80px;
+  width: 200px;
   font-size: 1.1rem;
   padding: 4px 6px;
   border-radius: 3px;
@@ -48,7 +55,7 @@ header {
 .taskAddInput {
   background: gold;
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 10px 15px;
   border-radius: 3px;
   border: none;
@@ -74,6 +81,8 @@ header {
   cursor: pointer;
   margin-right: 9px;
   border: none;
+  font-size: 1.3rem;
+  background-color: white;
 }
 
 .taskCardsArea {

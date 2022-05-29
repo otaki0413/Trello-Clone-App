@@ -11,6 +11,7 @@ export const TaskCard = ({ taskCardsList, setTaskCardsList, taskCard, index, }) 
   // ----------
   /* 入力したタスク */
   const [inputText, setInputText] = useState('');
+
   /* タスク格納用リスト */
   const [taskList, setTaskList] = useState([]);
 

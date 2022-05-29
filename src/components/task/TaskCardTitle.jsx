@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 export const TaskCardTitle = () => {
   // ---------
   // state宣言
@@ -8,7 +9,7 @@ export const TaskCardTitle = () => {
   const [isClick, setIsClick] = useState(false);
 
   /* 入力エリアの値 */
-  const [inputCardTitle, setInputCardTitle] = useState('Today');
+  const [inputCardTitle, setInputCardTitle] = useState("today");
 
   // ---------
   // 真偽値切り替え処理

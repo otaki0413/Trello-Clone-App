@@ -45,7 +45,7 @@ export const TaskAddInput = ({ inputText, setInputText, setTaskList, taskList })
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="add a task"
+          placeholder="タスクを入力してね"
           className='taskAddInput'
           onChange={handleChange}
           value={inputText}
